@@ -61,6 +61,7 @@ int main() {
     settings.majorVersion = 2;
     settings.minorVersion = 1;
     sf::RenderWindow window(sf::VideoMode({1280, 720}), "Shaders", sf::State::Windowed, settings);
+    window.setVerticalSyncEnabled(false);
     (void)window.setActive();  // set window as OpenGL target
     // window.setMouseCursorVisible(false); // hide cursor
 

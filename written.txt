@@ -1,2 +1,7 @@
 2a.
+The batched version (drawGL) converged to about 116 FPS and the non batched version was
+about 58 FPS.  Batching roughly doubled the frame rate.
+
 2b.
+One method was giving each sprite a z-value and enabling GL_DEPTH_TEST.
+This is the GPU's depth buffer that sorts overlapping sprites automatically.
